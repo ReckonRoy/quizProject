@@ -1,0 +1,92 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+#container
+{
+    background-color: cadetblue;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header-img
+{
+    display: block;
+    width: 100%;
+    /*background-image: url("../img/biblical.jpg");*/
+    float: left;
+}
+.header-img img
+{
+    width: 100%;
+}
+.h1
+{
+    width: 100%;
+    clear: both;
+    float: left;
+    color: blanchedalmond;
+    background-color: black;
+}
+/*------------------------Start Nav Styling---------------------*/
+/*----------------------- End Nav Styling ----------------------*/ 
+#username
+{
+    display: block;
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    top: 45%;
+    right: auto;
+    left: 8%;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 10%;
+    text-align: center;
+    position: absolute;
+    line-height: 1.5em;
+    background-color:greenyellow;
+}
+/*-----------------------------END MAIN STYLING-----------------*/
+#footer
+{
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    position: fixed;
+    bottom: 0;  
+}
+
+#footer li
+{
+    text-align: center;
+    list-style: none;
+    color: blanchedalmond;
+}
+
+#footer li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#footer li a:hover
+{
+    background-color: blue; 
+    color: white;
+    font-size: 1.5em;
+}
+
+#footer li a:active
+{
+    background-color: purple;
+    color: white;
+}
+
+#footer li a:visited
+{
+    color: gray;
+}
