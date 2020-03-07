@@ -1,0 +1,102 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+/*------------------------CSS managing the container-----------------------*/
+#container
+{
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background-color: green;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+/*-------------------------------------------------------------------------*/
+
+/*----------------------CSS managing the header----------------------------*/
+#header
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#header_img
+{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#header_img img
+{
+    width: 100%;
+}
+
+#trace_page
+{
+    background-color: brown;
+    color: ghostwhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
+#header_text
+{
+    text-align: center;
+    background-color: #E5E5E5;
+    color: #3A6F69;
+    margin: 0;
+    padding: 0;
+}
+/*-------------------------------------------------------------------------*/
+/*---------------------------CSS MAIN DIV----------------------------------*/
+#main
+{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    border: 1px solid red;
+}
+
+.qp_d
+{
+    background-color:cadetblue;
+    line-height: 1.5em;
+}
+
+.qp_d h2
+{
+    color: #0C55A7;
+}
+
+#ac_d
+{
+    width: 70%;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: auto;
+}
+
+
+#ac_d ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+#ac_d ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

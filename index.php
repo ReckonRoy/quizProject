@@ -95,16 +95,21 @@
                     {
                         $proceed = "quiz.php";
                     } else {
-                        $proceed = "";
+                        $proceed = "index.php";
                     }
                     //end manage sessions 
                 ?>
                             
-                            <script type="text/javascript">
-                                function relocate()
-                                {
-                                    window.location.href = document.write("<?php echo $proceed; ?>");
-                                }
-                            </script>
+                <script type="text/javascript">
+                    function relocate()
+                    {
+                        $url = "<?php echo $proceed; ?>";
+                        window.location.href = $url;
+                        if($url == "index.php")
+                        {
+                            alert("Please fill in name and surname fields in order to proceed!");
+                        }
+                    }
+                </script>
     </body>
 </html>
