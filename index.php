@@ -37,8 +37,8 @@
                         <br>
                         <input type="text" name="surname" required>
                         <br>
-                        <input type="submit" value="submit" required>
-                        <input type="button" value="proceed>" onclick="relocate()">
+                        <input type="submit" value="Start Quiz">
+                        
                     </form>    
                 </div>
                 
@@ -75,7 +75,7 @@
                             $surname = $_POST["surname"];
                             
                             $username = getUsername($name, $surname);
-        
+                            header('Location: quiz.php');
                          
                         }else{
                             ?><!-- Close php tag in order to use alert() warning message-->
