@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Brain Quiz</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="css/phone.css" type="text/css">
     </head>
     <body>
         
@@ -100,17 +98,5 @@
                     }
                     //end manage sessions 
                 ?>
-                            
-                <script type="text/javascript">
-                    function relocate()
-                    {
-                        $url = "<?php echo $proceed; ?>";
-                        window.location.href = $url;
-                        if($url == "index.php")
-                        {
-                            alert("Please fill in name and surname fields in order to proceed!");
-                        }
-                    }
-                </script>
     </body>
 </html>
