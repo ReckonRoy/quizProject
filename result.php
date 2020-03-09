@@ -18,7 +18,19 @@
             <div id="main">
                 <p>Quiz Test Result For: <?php echo $_SESSION['user_session']?></p>
                 <p>You have successfully completed the O'Level Quiz Show!</p>
-                <p>Your score is: <?php echo $_SESSION['user_score']; ?></p>
+                <?php
+                if($_SESSION['user_score'] < 10)
+                {
+                ?>
+                <p style="background-color: red; color: orange; font-size: 1.5em;">Your score is: <?php echo $_SESSION['user_score']; ?></p>
+                <?php
+                }else
+                {
+                ?>
+                <p style="background-color: green; color: black; font-size: 1.5em;">Your score is: <?php echo $_SESSION['user_score']; ?></p>
+                <?php
+                }
+                ?>
                 <p>
                     
                     <?php
@@ -43,6 +55,8 @@
                         <img src="img/test_fail.jpg" alt="You failed" id="fail">
                     <?php
                         }
+                        
+                        session_unset();
                     ?>
                     
                 </p>
