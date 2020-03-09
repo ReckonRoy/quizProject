@@ -107,7 +107,8 @@ $correct = array(
     '96' => "",
     '97' => "",
     '98' => "mass x velocity",
-    '99' => ""
+    '99' => "",
+    '100' => ""
 );
 
 function markQuestion($correct_key_answer, $answerKey, $mark)
@@ -325,7 +326,7 @@ $QA = array(
                     <img src="img/commerce.jpg" alt="An image illustrating commerce">
                 </div>
                 
-                <div id="trace_page">page: 1/4</div><!-- this div is responsible for pagination-->
+                
                     
                 <div id="header_text"><!-- div for the header text-->
                     <h1><?php echo $subject; ?></h1>
@@ -440,12 +441,18 @@ $QA = array(
                         if(isset($_POST[$group]))
                         {
                             $myanswer = $_POST[$group];
-                            
+                            echo $myanswer;
                             foreach($correct as $ca => $ca_v)
                             {
+                                echo $ca;
                                 if($ca == $myanswer && $ca_v != "")
                                 {
                                     $score++;
+                                }
+                                
+                                if($ca == 100)
+                                {
+                                    header('Location: result.php');
                                 }
                             }
                             
@@ -454,18 +461,18 @@ $QA = array(
                         
                     }
                 }
-                
-        }
+            }    
+        
+            
         
  ?>
-        <center><input type="submit" value="submit"><input type="button" value="review score" onclick="reviewScore();"></center>
+        <center><input type="submit" value="submit" ><input type="button" value="review score" onclick="reviewScore();"></center>
     
     </form>
   
     <?php
         
             $_SESSION['user_score'] = $score;
-            
     ?>
 </div><!-- Close main -->
 <!-------------------------------------------------------------------------------------------------------->
