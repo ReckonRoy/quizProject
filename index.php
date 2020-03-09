@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Brain Quiz</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/phone.css" type="text/css">
     </head>
     <body>

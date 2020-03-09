@@ -21,10 +21,17 @@
                 <p>
                     
                     <?php
-                        if($_SESSION['user_score'] > 12)
+                        if($_SESSION['user_score'] > 10)
                         {
-                            echo "Weldone. What a smart intelligent being you are<br>";
-                    ?>
+                            
+                            if($_SESSION['user_score'] > 10 && $_SESSION['user_score'] < 15)
+                            {
+                                echo "Weldone. You scored an average pass<br>";
+                            }elseif($_SESSION['user_score'] >= 15)
+                            {
+                                echo "Weldone. What a smart intelligent being you are<br>";
+                            }
+                      ?>
                     <img src="img/passed.jpg" alt="You Passed">
                     <?php
                             
