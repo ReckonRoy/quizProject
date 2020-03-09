@@ -1,0 +1,22 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 80%;
+    position: relative;
+    border: 1px solid blue;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+}
+#main{
+   line-height: 2em;
+   padding: 10px;
+}
+
+#fail{
+    width: 300px;
+}
+

@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/result.css" type="text/css">
         <title>Congrats</title>
     </head>
@@ -39,7 +40,7 @@
                             echo "Sorry! Your mark is below the standard pass. Better Luck Next Time<br>";
                     ?>
                     
-                        <img src="img/test_fail.jpg" alt="You failed">
+                        <img src="img/test_fail.jpg" alt="You failed" id="fail">
                     <?php
                         }
                     ?>
