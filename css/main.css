@@ -7,9 +7,9 @@
 
 #container
 {
-    background-color: cadetblue;
-    width: 80%;
-    margin-left: 10%;
+    background-color: blue;
+    width: 60%;
+    margin: 0 auto;
     height: 100%;
     position: relative;
 }
@@ -23,28 +23,24 @@
 }
 .header-img img
 {
-    width: 100%;
+    width: 600px;
 }
 .h1
 {
     display: none;
-    width: 100%;
-    position: absolute;
-    float: left;
-    color: blanchedalmond;
-    background-color: black;
+    
 }
 /*------------------------Start Nav Styling---------------------*/
 /*----------------------- End Nav Styling ----------------------*/ 
 #username
 {
     display: block;
-    width: 70%;
+    width: 400px;
     padding: 20px;
     margin: 0 auto;
     top: 350px;
     right: auto;
-    left: 8%;
+    margin-left: 20%;
     margin-top: 30px;
     border: 1px solid black;
     border-radius: 10%;
