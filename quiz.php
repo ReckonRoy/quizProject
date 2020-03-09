@@ -18,8 +18,8 @@ $correct = array(
     '7' => "",
     '8' => "uses the goods but pays later.",
     '9' => "",
-    '10' => "providing small quantities of goods to consumers",
-    '11' => "",
+    '10' => "",
+    '11' => "selling goods in bulk to wholesalers",
     '12' => "",
     '13' => "",
     '14' => "buying and selling shares for clients",
@@ -466,7 +466,7 @@ $QA = array(
             
         
  ?>
-        <center><input type="submit" value="submit" ><input type="button" value="review score" onclick="reviewScore();"></center>
+        <center><input type="submit" value="submit" ></center>
     
     </form>
   
@@ -478,13 +478,5 @@ $QA = array(
 <!-------------------------------------------------------------------------------------------------------->
         </div><!-- close container tag-->
         
-            <script type="text/javascript">
-                function reviewScore()
-                {
-                    document.location.href = "result.php";
-                }
-               
-               
-            </script>
     </body>
 </html>
