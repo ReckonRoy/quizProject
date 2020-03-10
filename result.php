@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/result.css" type="text/css">
+        <script type="text/javascript" src="js/jquery.js">
+        </script>
         <title>Congrats</title>
     </head>
     
@@ -16,7 +18,13 @@
             
 <!-------------- div main displays the results  for test quiz ---------------------------------->
             <div id="main">
-                <p>Quiz Test Result For: <?php echo $_SESSION['user_session']?></p>
+                <?php
+                
+                if(isset($_SESSION['user_session']))
+                {
+                    
+                ?>
+                <p>Quiz Test Result For: <?php echo $_SESSION['user_session']; ?></p>
                 <p>You have successfully completed the O'Level Quiz Show!</p>
                 <?php
                 if($_SESSION['user_score'] < 10)
@@ -57,12 +65,20 @@
                         }
                         
                         session_unset();
+                        } else {
+                            ?>
+                        <p>Your session has ended. Please retake quiz.</p>
+                        <?php
+                        }
                     ?>
                     
                 </p>
             </div>
             
         </div>
+    <script type="text/javascript">
+        
+    </script>
 <!------------------------------------------------------------------------------------------------------>        
     </body>
 </html>
