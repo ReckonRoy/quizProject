@@ -430,7 +430,7 @@ $QA = array(
                         ?>
                             <div id="ac_d"><!-- answer child div-->
                             <ul>
-                                <li><input type="radio" name="<?php echo $group; ?>" value="<?php echo $answer_key; ?>"><?php echo $value; ?></li>
+                                <li><input type="radio" name="<?php echo $group; ?>" value="<?php echo $answer_key; ?>" required><?php echo $value; ?></li>
                             </ul>
                             </div><!-- close answer child div-->
                         <?php
