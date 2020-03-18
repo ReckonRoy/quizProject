@@ -19,7 +19,7 @@
 #open your web browser and navigate to "localhost/projectName/indexfile"
 
 ## Built With
-#PHP, HTML, CSS
+PHP, HTML, CSS
 
 ## Authors
 * **Le-Roy Jomgwe** 
